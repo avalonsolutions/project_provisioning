@@ -1,0 +1,15 @@
+runtime: python37
+
+handlers:
+- url: /.*
+  secure: always
+  redirect_http_response_code: 301
+  script: auto
+
+env_variables:
+  MARKETING_FOLDER_ID: '<FOLDER_ID>'
+  DEMO_FOLDER_ID: '<FOLDER_ID>'
+  PLAYGROUND_FOLDER_ID: '<FOLDER_ID>'
+  MS_FOLDER_ID: '<FOLDER_ID>'
+  IS_FOLDER_ID: '<FOLDER_ID>'
+  BILLING_ACCOUNT_ID: '<BILLING_ACCOUNT_ID>'
