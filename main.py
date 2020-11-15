@@ -69,7 +69,7 @@ def create():
         "billingEnabled": True
         }
     update_request = service.projects().updateBillingInfo(
-        name='projects/' + project_name, body=billing_info)
+        name='projects/{0}'.format(project_name), body=billing_info)
     update_request = update_request.execute()
 
     return 'OK'
